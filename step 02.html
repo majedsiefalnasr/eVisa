@@ -115,7 +115,7 @@
     </div>
   </nav>
 
-  <section class="application-form my-4">
+  <section class="application-form py-5">
     <!-- Content -->
     <div class="container">
       <!-- Notification -->
@@ -151,85 +151,149 @@
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-8">
-          <!-- Step Data -->
-          <div class="step-data py-5">
-            <h4 class="fw-bold mb-4 mt-2">المعلومات العامة</h4>
+        <!-- Step Data -->
+        <div class="col-12 col-md-8" data-passengers>
+          <div class="step-data mb-4" data-passenger="1">
+            <h4 class="fw-bold mb-4 mt-2">بيانات جواز السفر</h4>
 
             <div class="row">
               <div class="col-12 col-md-6">
                 <div class="mb-3">
-                  <label for="purposeOfTravel" class="form-label d-flex">
-                    رقم الجوال
-                    <span class="text-danger my-auto" data-bs-toggle="tooltip" data-bs-placement="top"
-                      title="Tooltip on top">
-                      <i class="iconoir-info-empty my-auto ms-2"></i>
-                    </span>
+                  <label for="general-Name" class="form-label d-flex">
+                    اسم مقدم الطلب
                   </label>
-                  <div class="d-flex">
-                    <select class="form-select w-25 me-4" aria-label="Default select example" id="phone-prefex">
-                      <option selected></option>
-                      <option value="1">(+20)</option>
-                      <option value="2">(+23)</option>
-                    </select>
-                    <input type="tel" class="form-control" id="phone-number" placeholder="رقم الجوال">
-                  </div>
+                  <input type="text" class="form-control" id="general-Name" placeholder="اسم مقدم الطلب">
+                  <div class="small mt-2">الاسم الذي سيظهر في الفاتورة بعد الدفع، لا يشترط أن يكون أحد المقدمين على
+                    الفيزا
+                    الالكترونية.</div>
+                </div>
+              </div>
+            </div>
+
+            <h6 class="fw-bold mt-2 mb-2">عنوان مقدم الطلب</h6>
+
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="general-AddressCountry" class="form-label d-flex">
+                    الدولة
+                  </label>
+                  <select class="form-select" aria-label="Default select example" id="general-AddressCountry">
+                    <option selected></option>
+                    <option value="1">مصر</option>
+                    <option value="2">اليمن</option>
+                  </select>
+                  <div class="small mt-2">دولة البنك الذي قام بإصدار البطاقة البنكية التي ستستخدم في دفع رسوم تقديم
+                    الفيزا الالكترونية.</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="general-AddressCity" class="form-label d-flex">
+                    المدينة / المحافظة / الولاية
+                  </label>
+                  <input type="text" class="form-control" id="general-AddressCity">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="general-Address1" class="form-label d-flex">
+                    العنوان 1
+                  </label>
+                  <input type="text" class="form-control" id="general-Address1">
+                  <div class="small mt-2">عنوان مقدم الطلب، سيظهر العنوان في الفاتورة بعد الدفع.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="general-Address2" class="form-label d-flex">
+                    العنوان 2 (اختياري)
+                  </label>
+                  <input type="text" class="form-control" id="general-Address2">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="general-PostalCode" class="form-label d-flex">
+                    رقم البريد (اختياري)
+                  </label>
+                  <input type="text" class="form-control" id="general-PostalCode">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="general-PhoneNumber" class="form-label d-flex">
+                    رقم الجوال
+                  </label>
+                  <input type="text" class="form-control" id="general-PhoneNumber">
                 </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12 col-md-6">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-
+                <div class="mb-3">
+                  <label for="general-email" class="form-label d-flex">
+                    البريد الالكتروني (اختياري)
+                  </label>
+                  <input type="text" class="form-control" id="general-email">
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Step Sidebar -->
         <div class="col-12 col-md-4">
           <div class="step-data mb-4 py-5">
-            <h4 class="fw-bold mb-4 mt-2">المعلومات العامة</h4>
-
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="mb-3">
-                  <label for="purposeOfTravel" class="form-label d-flex">
-                    رقم الجوال
-                    <span class="text-danger my-auto" data-bs-toggle="tooltip" data-bs-placement="top"
-                      title="Tooltip on top">
-                      <i class="iconoir-info-empty my-auto ms-2"></i>
-                    </span>
-                  </label>
-                  <div class="d-flex">
-                    <select class="form-select w-25 me-4" aria-label="Default select example" id="phone-prefex">
-                      <option selected></option>
-                      <option value="1">(+20)</option>
-                      <option value="2">(+23)</option>
-                    </select>
-                    <input type="tel" class="form-control" id="phone-number" placeholder="رقم الجوال">
-                  </div>
-                </div>
-              </div>
+            <div class="row fw-bold mb-3">
+              <div class="col-8">البيان</div>
+              <div class="col-4">التكلفة</div>
             </div>
 
             <div class="row">
-              <div class="col-12 col-md-6">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <div class="col-8">الرسوم الحكومية</div>
+              <div class="col-4">EGP 636.23</div>
+            </div>
 
-              </div>
+            <div class="row">
+              <div class="col-8">رسوم الخدمة</div>
+              <div class="col-4">EGP 200</div>
+            </div>
+
+            <div class="dropdown-divider my-4">
+            </div>
+
+            <div class="row fw-bold fs-5">
+              <div class="col-8">الاجمالي</div>
+              <div class="col-4">EGP 636.23</div>
             </div>
           </div>
 
           <!-- Actions -->
-          <a href="./step 02 - General Information.html" type="button" class="btn btn-primary fw-bold w-100">
-            متابعة
-          </a>
+          <div class="d-flex gap-4">
+            <a href="./step 03.html" type="button" class="btn btn-primary fw-bold w-100">
+              متابعة
+            </a>
+            <a href="./step 01.html" type="button" class="d-flex btn btn-outline-primary fw-bold">
+              عودة
+              <i class="ms-2 my-auto iconoir-arrow-left"></i>
+            </a>
+          </div>
         </div>
-
-
       </div>
 
     </div>

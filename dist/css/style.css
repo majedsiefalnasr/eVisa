@@ -377,6 +377,21 @@ a {
   box-shadow: 0 0 0 0.25rem #92000040;
 }
 
+.add-passenger {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 18px 32px;
+  font-size: 1.5rem;
+}
+
+.add-passenger .text {
+  font-weight: 700;
+}
+
 /* #endregion */
 
 /* #region / Responsiveness */
