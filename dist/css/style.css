@@ -396,6 +396,12 @@ small {
   font-size: .75rem;
 }
 
+.sticky-top {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 20px;
+}
+
 /* #endregion */
 
 /* #region / Responsiveness */
