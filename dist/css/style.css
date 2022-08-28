@@ -56,7 +56,7 @@ img {
 /* -----------------------------------------------
   Main > Buttons
 -------------------------------------------------*/
-.btn. {}
+
 
 /* -----------------------------------------------
   Main > Main navbar 
@@ -110,10 +110,17 @@ img {
 
 #home>.container {
   padding-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 #home .catchy-title {
   font-size: 3.625rem;
+}
+
+@media (max-width: 767.98px) {
+  #home .catchy-title {
+    font-size: 2.625rem;
+  }
 }
 
 #home .main-steps h4 {
@@ -166,6 +173,10 @@ img {
   padding: 18px 32px;
 }
 
+.step-data>.icon>* {
+  max-width: 100%;
+}
+
 .application-form .notification .dismiss {
   position: absolute;
   left: -16px;
@@ -191,6 +202,12 @@ img {
   display: flex;
   gap: 32px;
   justify-content: space-between;
+}
+
+@media (max-width: 767.98px) {
+  .application-form .notification .content {
+    flex-direction: column;
+  }
 }
 
 .application-form .notification .content .text {
@@ -248,8 +265,8 @@ img {
 
 @media (max-width: 413.98px) {
   .container {
-    padding-left: var(--bs-gutter-x, 1rem);
-    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 2rem);
+    padding-right: var(--bs-gutter-x, 2rem);
   }
 }
 
