@@ -246,9 +246,35 @@ img {
   --bs-primary-rgb: 204, 0, 0;
 }
 
+@media (max-width: 413.98px) {
+  .container {
+    padding-left: var(--bs-gutter-x, 1rem);
+    padding-right: var(--bs-gutter-x, 1rem);
+  }
+}
+
 a {
   color: #CC0000;
   text-decoration: underline
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    gap: 20px;
+  }
+
+  .navbar-collapse {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 18px 32px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
 }
 
 .form-check-input:checked {
@@ -418,7 +444,7 @@ small {
 /* Small devices (landscape phones, 414px and up) */
 @media (min-width: 414px) {}
 
-/* Extra Small devices (mobile phones, less than 768px) */
+/* Extra Small devices (mobile phones, less than 414px) */
 @media (max-width: 413.98px) {}
 
 /* Medium devices (tablets, 768px and up) */
