@@ -310,6 +310,163 @@
             </div>
           </div>
 
+          <div class="accordion-item step-data mb-4" data-passenger="2">
+            <h2 class="accordion-header" id="passenger-1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#passenger-collapse-1" aria-expanded="true" aria-controls="passenger-1">
+                بيانات جواز السفر
+              </button>
+            </h2>
+
+            <div id="passenger-collapse-1" class="accordion-collapse collapse show" aria-labelledby="passenger-1">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-ID" class="form-label d-flex">
+                        رقم جواز السفر
+                      </label>
+                      <input type="text" class="form-control" id="passport-ID" placeholder="رقم جواز السفر">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <label for="passport-FirstName" class="form-label d-flex">
+                      الاسم الاول
+                    </label>
+                    <input type="text" class="form-control" id="passport-FirstName">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <label for="passport-SecondName" class="form-label d-flex">
+                      الاسم الثانى
+                    </label>
+                    <input type="text" class="form-control" id="passport-SecondName">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <label for="passport-ThirdName" class="form-label d-flex">
+                      الاسم الثالث
+                    </label>
+                    <input type="text" class="form-control" id="passport-ThirdName">
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-3 mb-3">
+                    <label for="passport-FourthName" class="form-label d-flex">
+                      الاسم الرابع
+                    </label>
+                    <input type="text" class="form-control" id="passport-FourthName">
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="passport-SurName" class="form-label d-flex">
+                      اللقب
+                    </label>
+                    <input type="text" class="form-control" id="passport-SurName">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-Job" class="form-label d-flex">
+                        المهنة
+                      </label>
+                      <input type="text" class="form-control" id="passport-Job">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-PlaceOfBirth" class="form-label d-flex">
+                        محل الميلاد
+                      </label>
+                      <input type="text" class="form-control" id="passport-PlaceOfBirth">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-DateOfBirth" class="form-label d-flex">
+                        تاريخ الميلاد
+                      </label>
+                      <input type="date" class="form-control" id="passport-DateOfBirth">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-Sex" class="form-label d-flex">
+                        الجنس
+                      </label>
+                      <select class="form-select" aria-label="Default select example" id="passport-Sex">
+                        <option selected></option>
+                        <option value="1">ذكر</option>
+                        <option value="2">انثى</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-DateOfIssue" class="form-label d-flex">
+                        تاريخ الاصدار
+                      </label>
+                      <input type="date" class="form-control" id="passport-DateOfIssue">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-DateOfExpiry" class="form-label d-flex">
+                        تاريخ الانتهاء
+                      </label>
+                      <input type="date" class="form-control" id="passport-DateOfExpiry">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="mb-3">
+                      <label for="passport-IssuingAuthority" class="form-label d-flex">
+                        جهة الاصدار
+                      </label>
+                      <input type="text" class="form-control" id="passport-IssuingAuthority">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="passport-image" class="form-label">صورة وثيقة السفر</label>
+                      <input class="form-control" type="file" id="passport-image">
+                      <div class="feedback small mt-2">
+                        حجم الملف لا يتخطي ال 2MB - الصيغ المدعومة png, jpeg
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="d-flex flex-column flex-md-row gap-4 mt-4">
+                  <a href="./index.html" type="button" class="btn btn-outline-primary fw-bold ms-auto">
+                    حذف المسافر
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="add-passenger mb-4">
             <h4 class="text">
               اضافة مسافر

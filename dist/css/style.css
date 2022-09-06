@@ -246,6 +246,27 @@ img {
   font-weight: 700;
 }
 
+.step-data.accordion-item {
+  padding: 0;
+  overflow: auto;
+}
+
+.step-data .accordion-body {
+  padding: 18px 32px;
+}
+
+.step-data .accordion-button {
+  padding: 18px 32px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.step-data .accordion-button:not(.collapsed) {
+  color: unset;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 /* #endregion */
 
 /* #region / Bootstrap 5 - Customization */
